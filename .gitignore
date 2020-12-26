@@ -1,0 +1,9 @@
+*.sln
+/Logs
+/IOS
+/Android
+*.csproj
+.DS_Store
+.vs
+.vsconfig
+/Temp
