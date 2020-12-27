@@ -7,7 +7,7 @@ public class Player : MonoBehaviour {
 
     private NavMeshAgent nav;
 
-    private Vector3 mousePos;//自定义鼠标点向量
+    public Vector3 mousePos;//自定义鼠标点向量
     private Ray ray; //射线
     private bool walk;//是否行走
 
@@ -49,6 +49,7 @@ public class Player : MonoBehaviour {
 
             //从屏幕中间发出一条射线，到鼠标点击点
             ray = Camera.main.ScreenPointToRay(mousePos);
+
             //定义碰撞点
             RaycastHit hit;
             //发出一条射线碰撞点

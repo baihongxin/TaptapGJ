@@ -34,7 +34,7 @@ public class WorldObject : MonoBehaviour
 
         var controlX = UnityEngine.Screen.width * value;
         Vector3 screenPoint = Camera.main.WorldToScreenPoint(transform.position);
-        Debug.Log(screenPoint + "   " + controlX);
+        Debug.Log(screenPoint + "   " + screenPoint.x  + " " + controlX);
         if (screenPoint.x < controlX)
         {
             

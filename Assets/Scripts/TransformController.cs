@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.EventSystems;
 using UnityEngine;
 
 public class TransformController : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public int i;
+
     void Start()
     {
         Debug.Log("test");
@@ -22,5 +24,10 @@ public class TransformController : MonoBehaviour
        
         float curPos = UnityEngine.Screen.width * value;
         Debug.Log(curPos);
+        GameObject[] objects = GameObject.FindGameObjectsWithTag("ContolObject");
+        foreach (GameObject target in objects) {
+            ExecuteEvents.Execute<ICustomEventHandler>(target, null, (x, y) => x.SliderChnage(curPos));
+        }
+       
     }
 }
