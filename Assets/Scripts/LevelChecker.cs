@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LevelChecker : MonoBehaviour
 {
-    public Text text;
+    public RawImage rawImage;
     public float timer = 3.0f;
     public bool nextFlag = false;
     public float timerF = 1.0f;
@@ -16,7 +16,7 @@ public class LevelChecker : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        rawImage.canvasRenderer.SetAlpha(0);
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class LevelChecker : MonoBehaviour
             timerF -= Time.deltaTime;
             if (timerF <= 0) {
                 timerF2--;
-                text.text = "恭喜你过了第一关 \n " + timerF2;
+                rawImage.canvasRenderer.SetAlpha(1);
                 timerF = 1.0f;
             }
     
@@ -37,10 +37,11 @@ public class LevelChecker : MonoBehaviour
                 Scene scene = SceneManager.GetActiveScene();
                 if (scene.name == "Level2")
                 {
-                    
+                    rawImage.canvasRenderer.SetAlpha(0);
                 }
                 else if (scene.name == "Level1") {
                     SceneManager.LoadScene(1);
+                    rawImage.canvasRenderer.SetAlpha(0);
                 }
          
                 timer = 3.0f;
@@ -55,7 +56,6 @@ public class LevelChecker : MonoBehaviour
         string collidName = other.name;
         Debug.Log("collid:" + collidName);
         if (collidName == "Player") {
-            text.text = "恭喜你过了第一关 \n 3";
             nextFlag = true;
 
 
