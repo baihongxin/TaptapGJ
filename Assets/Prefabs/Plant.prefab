@@ -47,6 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: 150
   position: 0
+  reverse: 1
   winter: {fileID: 1769209695293517142}
   summer: {fileID: 5643716656413039924}
 --- !u!54 &1147192442788054944

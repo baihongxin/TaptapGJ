@@ -1,5 +1,21 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!208 &1556295942253625671
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6556035707423096232}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.05, y: 0.15, z: 0.05}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &8495876934711533194
 GameObject:
   m_ObjectHideFlags: 0
@@ -47,6 +63,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   offset: -200
   position: 0
+  reverse: 0
   winter: {fileID: 6556035707423096232}
   summer: {fileID: 2285883654748689528}
 --- !u!1001 &4691861733528918840
@@ -153,7 +170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4917240921204075331, guid: 893045f5b4365437aa1247b6ada2f36a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4917240921204075331, guid: 893045f5b4365437aa1247b6ada2f36a, type: 3}
       propertyPath: m_TagString
@@ -203,7 +220,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -3070435914238190585, guid: 893045f5b4365437aa1247b6ada2f36a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 893045f5b4365437aa1247b6ada2f36a, type: 3}
 --- !u!1 &2285883654748689528 stripped
 GameObject:

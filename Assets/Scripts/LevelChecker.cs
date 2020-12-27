@@ -34,7 +34,15 @@ public class LevelChecker : MonoBehaviour
             if (timer <= 0)
             {
                 Debug.Log(string.Format("Timer1 is up !!! time=${0}", Time.time));
-                SceneManager.LoadScene(1);
+                Scene scene = SceneManager.GetActiveScene();
+                if (scene.name == "Level2")
+                {
+                    
+                }
+                else if (scene.name == "Level1") {
+                    SceneManager.LoadScene(1);
+                }
+         
                 timer = 3.0f;
                 nextFlag = false;
             }
