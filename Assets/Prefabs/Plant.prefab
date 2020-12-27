@@ -65,19 +65,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
---- !u!135 &2168134199262107786
-SphereCollider:
+--- !u!208 &4324150576938771698
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4154287626868365664}
-  m_Material: {fileID: 13400000, guid: a45ac8eae815e453999740dc031a696c, type: 2}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 1.0087583
-  m_Center: {x: 1.6892431, y: 0.6815753, z: 1.4160342}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 1.0090001, y: 0.684, z: 1.0090001}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 1.6890001, y: 0.68200004, z: 1.416}
+  m_TimeToStationary: 0.5
 --- !u!54 &8988243146329026983
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -110,19 +113,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 14
   m_CollisionDetection: 0
---- !u!135 &2322507986709661718
-SphereCollider:
+--- !u!208 &3223106645073069159
+NavMeshObstacle:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8032453797271562498}
-  m_Material: {fileID: 13400000, guid: a45ac8eae815e453999740dc031a696c, type: 2}
-  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.67250556
-  m_Center: {x: 1.1261622, y: 0.45438358, z: 0.94402283}
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.4, y: 0.4, z: 0.4}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 1, y: 0.5, z: 0.8}
+  m_TimeToStationary: 0.5
 --- !u!1001 &1600651645199339125
 PrefabInstance:
   m_ObjectHideFlags: 0

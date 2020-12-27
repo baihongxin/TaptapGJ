@@ -29,6 +29,7 @@ public class Player : MonoBehaviour {
         mousePos = myPos;
         nav.speed = speed;
         nav.stoppingDistance = 0.3f;
+    
     }
 
 	void Update (){
@@ -60,10 +61,12 @@ public class Player : MonoBehaviour {
                 walk = true;
                 nav.SetDestination(mousePos);//设置目的地是鼠标点
                 
+                
 
             }
 
         }
+        nav.nextPosition = transform.position;
 
 
         if (walk)

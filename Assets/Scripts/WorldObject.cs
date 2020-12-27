@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class WorldObject : MonoBehaviour
@@ -12,7 +13,7 @@ public class WorldObject : MonoBehaviour
 
     void Start()
     {
-       
+        EventSystem.current.IsPointerOverGameObject();
     }
 
     // Update is called once per frame

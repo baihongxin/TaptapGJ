@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class TransformController : MonoBehaviour
 {
-    public int i;
+ 
 
     void Start()
     {
